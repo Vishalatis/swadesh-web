@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="" dir="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="Home" />
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/img/65127f2a23da3.png" />
+    <!-- Icomoon Icon CSS -->
+    <link rel="stylesheet" href="assets/front/fonts/icomoon/style.css" />
+    <link
+      rel="stylesheet"
+      href="assets/front/fonts/fontawesome/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/front/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/front/css/vendors/datatables.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/front/css/vendors/magnific-popup.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/front/css/vendors/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/front/css/vendors/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/front/css/vendors/nice-select.css" />
+    <link rel="stylesheet" href="assets/front/css/vendors/select2.min.css" />
+    <link rel="stylesheet" href="assets/front/css/vendors/aos.min.css" />
+    <link rel="stylesheet" href="assets/css/toastr.min.css" />
+    <link rel="stylesheet" href="assets/front/css/vendors/leaflet.css" />
+    <link rel="stylesheet" href="assets/front/css/vendors/MarkerCluster.css" />
+    <link rel="stylesheet" href="assets/css/floating-whatsapp.css" />
+    <link rel="stylesheet" href="assets/front/css/style.css" />
+    <link rel="stylesheet" href="assets/front/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/summernote-content.css" />
+
+    <style>
+      :root {
+        --color-primary: red;
+        --color-primary-rgb: 245, 127, 75;
+        --color-secondary: #75a0ff;
+        --color-secondary-rgb: 37, 80, 86;
+      }
+    </style>
+  </head>
+
+  <body dir="">
+    <!-- Preloader start -->
+    <div id="preLoader">
+      <div class="loader">
+        <svg viewBox="0 0 80 80">
+          <rect x="8" y="8" width="64" height="64"></rect>
+        </svg>
+        <div class="icon"><img src="assets/front/demo-img/p1.png" /></div>
+      </div>
+    </div>
+    <!-- Preloader end -->
+    <div class="request-loader">
+      <img src="assets/img/loaders.gif" />
+    </div>
+
+    <!-- Header Start -->
+    <header class="header-area header-1" data-aos="slide-down">
+      <div class="mobile-menu">
+        <div class="container">
+          <div class="mobile-menu-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="main-responsive-nav">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html">
+              <img src="assets/img/logo.png" />
+            </a>
+          </div>
+          <button class="menu-toggler" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="main-navbar">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg">
+            <!-- Logo -->
+            <a href="index.html" class="navbar-brand">
+              <img src="assets/img/logo.png" />
+            </a>
+            <!-- Navigation items -->
+            <div class="collapse navbar-collapse">
+              <ul id="mainMenu" class="navbar-nav mobile-item mx-auto">
+                <li class="nav-item active">
+                  <a class="nav-link toggle" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="properties.html"
+                    >Property Services</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link toggle" href="#"
+                    >Home Loan<i class="fal fa-plus"></i
+                  ></a>
+                  <ul class="menu-dropdown">
+                    <li class="mb-1 mx-3">Apply Now</li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="home-loan-emi-calculator.html"
+                        >Home Loan EMI Calculator</a
+                      >
+                    </li>
+                    <hr />
+                    <li class="mb-1 mx-3">Explore</li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="loan-eligibility.html"
+                        >Loan Eligibility</a
+                      >
+                    </li>
+                    <hr />
+                    <li class="mb-1 mx-3">Interest Rates</li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="sbi-home-loan-interest-rates.html"
+                        >SBI Home Loan Interest Rates</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="hdfc-home-loan-interest-rates.html"
+                        >HDFC Home Loan Interest Rates</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link toggle" href="#"
+                    >Important Links<i class="fal fa-plus"></i
+                  ></a>
+                  <ul class="menu-dropdown">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://bhulekh.mahabhumi.gov.in/"
+                        target="_blank"
+                        >7/12 Utara</a
+                      >
+                    </li>
+                    <hr />
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://efilingigr.maharashtra.gov.in/ereg/MainForm.aspx"
+                        target="_blank"
+                        >Leave and License -Online</a
+                      >
+                    </li>
+                    <hr />
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://igrmaharashtra.gov.in/"
+                        target="_blank"
+                        >IGR -Registration site</a
+                      >
+                    </li>
+                    <hr />
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://digitalsatbara.mahabhumi.gov.in/aaplichawdi/"
+                        target="_blank"
+                        >Aapali Chavadi / Ferfar</a
+                      >
+                    </li>
+                    <hr />
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://mahabhunakasha.mahabhumi.gov.in/bhunaksha/27/index.jsp"
+                        target="_blank"
+                        >Gavnakasha</a
+                      >
+                    </li>
+                    <hr />
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://emojni.mahabhumi.gov.in/emojni/mojani/pgLogin.aspx"
+                        target="_blank "
+                        >emojani/Check Mojni Application Status( चेक मोजणी
+                        स्टेटस )</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="more-option mobile-item">
+              <div class="item">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-outline btn-sm dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Customer
+                  </button>
+                  <ul class="dropdown-menu radius-0">
+                    <li>
+                      <a class="dropdown-item" href="user-login.html">Login</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="user-signup.html"
+                        >Signup</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-primary btn-sm dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Vendor
+                  </button>
+                  <ul class="dropdown-menu radius-0">
+                    <li>
+                      <a class="dropdown-item" href="vendor-login.html"
+                        >Login</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="vendor-signup.html"
+                        >Signup</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Page title start-->
+    <div class="page-title-area header-next">
+      <img class="lazyload blur-up bg-img" src="assets/img/6511175715121.jpg" />
+      <div class="container">
+        <div class="content text-center">
+          <h1 class="color-white">Vendors</h1>
+          <ul class="list-unstyled">
+            <li class="d-inline-block">
+              <a href="">Home</a>
+            </li>
+            <li class="d-inline-block">>></li>
+            <li class="d-inline-block active">Vendors</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Page title end-->
+
+    <div class="agent-grid pt-100 pb-70">
+      <div class="container">
+        <div class="row gx-xl-5">
+          <div class="col-lg-9">
+            <div class="row">
+              <div
+                class="col-lg-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="agent-box radius-md mb-30">
+                  <div class="agent-img">
+                    <figure>
+                      <a href="#" class="lazy-container ratio ratio-1-2">
+                        <img
+                          class="lazyload"
+                          src="assets/img/admins/66693d3c45263.png"
+                          data-src="assets/img/admins/66693d3c45263.png"
+                        />
+                      </a>
+                    </figure>
+                    <div
+                      class="agent-ratings d-flex align-items-center justify-content-between"
+                    >
+                      <div class="ratings"></div>
+                      <span class="label">Real Estate</span>
+                    </div>
+                  </div>
+                  <div class="agent-details text-center">
+                    <span class="color-primary font-sm">5 Properties</span> |
+                    <span class="color-primary font-sm">3 Agents</span> |
+                    <span class="color-primary font-sm">3 Projects</span>
+
+                    <h4 class="agent-title">
+                      <a href="vendor-profile.html">Alex Daddario</a>
+                    </h4>
+                    <ul class="agent-info list-unstyled p-0">
+                      <li class="icon-start">
+                        <a href="tel:278964587">
+                          <i class="fal fa-phone-plus"></i> +91 9090909090</a
+                        >
+                      </li>
+
+                      <li class="icon-start font-sm">
+                        <a href="mailto:example@gmail.com">
+                          <i class="fal fa-envelope"></i> example@gmail.com</a
+                        >
+                      </li>
+                    </ul>
+                    <a href="vendor-profile.html" class="btn-text"
+                      >View Profile</a
+                    >
+                  </div>
+                </div>
+                <!-- agent-default -->
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="agent-box radius-md mb-30">
+                  <div class="agent-img">
+                    <figure>
+                      <a href="#" class="lazy-container ratio ratio-1-2">
+                        <img
+                          class="lazyload"
+                          src="assets/admin/img/vendor-photo/66693bf58cdcb.png"
+                          data-src="assets/admin/img/vendor-photo/66693bf58cdcb.png"
+                        />
+                      </a>
+                    </figure>
+                    <div
+                      class="agent-ratings d-flex align-items-center justify-content-between"
+                    >
+                      <div class="ratings"></div>
+                      <span class="label">Real Estate</span>
+                    </div>
+                  </div>
+                  <div class="agent-details text-center">
+                    <span class="color-primary font-sm">1 Properties</span> |
+                    <span class="color-primary font-sm">3 Agents</span> |
+                    <span class="color-primary font-sm">1 Projects</span>
+
+                    <h4 class="agent-title">
+                      <a href="vendor-profile.html">Marcia R. Worth</a>
+                    </h4>
+                    <ul class="agent-info list-unstyled p-0">
+                      <li class="icon-start">
+                        <a href="tel:2574512">
+                          <i class="fal fa-phone-plus"></i> +91 9090909090</a
+                        >
+                      </li>
+
+                      <li class="icon-start font-sm">
+                        <a href="mailto:nenimok340@eqvox.com">
+                          <i class="fal fa-envelope"></i>
+                          nenimok340@eqvox.com</a
+                        >
+                      </li>
+                    </ul>
+                    <a href="vendor-profile.html" class="btn-text"
+                      >View Profile</a
+                    >
+                  </div>
+                </div>
+                <!-- agent-default -->
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="agent-box radius-md mb-30">
+                  <div class="agent-img">
+                    <figure>
+                      <a href="#" class="lazy-container ratio ratio-1-2">
+                        <img
+                          class="lazyload"
+                          src="assets/admin/img/vendor-photo/66693baebe4c2.png"
+                          data-src="assets/admin/img/vendor-photo/66693baebe4c2.png"
+                        />
+                      </a>
+                    </figure>
+                    <div
+                      class="agent-ratings d-flex align-items-center justify-content-between"
+                    >
+                      <div class="ratings"></div>
+                      <span class="label">Real Estate</span>
+                    </div>
+                  </div>
+                  <div class="agent-details text-center">
+                    <span class="color-primary font-sm">3 Properties</span> |
+                    <span class="color-primary font-sm">1 Agents</span> |
+                    <span class="color-primary font-sm">2 Projects</span>
+
+                    <h4 class="agent-title">
+                      <a href="vendor-profile.html">Oscar Eade</a>
+                    </h4>
+                    <ul class="agent-info list-unstyled p-0">
+                      <li class="icon-start">
+                        <a href="tel:26456852">
+                          <i class="fal fa-phone-plus"></i> +91 9090909090</a
+                        >
+                      </li>
+
+                      <li class="icon-start font-sm">
+                        <a href="mailto:fomima3881@eqvox.com">
+                          <i class="fal fa-envelope"></i>
+                          fomima3881@eqvox.com</a
+                        >
+                      </li>
+                    </ul>
+                    <a href="vendor-profile.html" class="btn-text"
+                      >View Profile</a
+                    >
+                  </div>
+                </div>
+                <!-- agent-default -->
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="agent-box radius-md mb-30">
+                  <div class="agent-img">
+                    <figure>
+                      <a href="#" class="lazy-container ratio ratio-1-2">
+                        <img
+                          class="lazyload"
+                          src="assets/admin/img/vendor-photo/66693b077cf35.png"
+                          data-src="assets/admin/img/vendor-photo/66693b077cf35.png"
+                        />
+                      </a>
+                    </figure>
+                    <div
+                      class="agent-ratings d-flex align-items-center justify-content-between"
+                    >
+                      <div class="ratings"></div>
+                      <span class="label">Real Estate</span>
+                    </div>
+                  </div>
+                  <div class="agent-details text-center">
+                    <span class="color-primary font-sm">1 Properties</span> |
+                    <span class="color-primary font-sm">0 Agents</span> |
+                    <span class="color-primary font-sm">1 Projects</span>
+
+                    <h4 class="agent-title">
+                      <a href="vendor-profile.html">Holly Gledson</a>
+                    </h4>
+                    <ul class="agent-info list-unstyled p-0">
+                      <li class="icon-start">
+                        <a href="tel:25486945">
+                          <i class="fal fa-phone-plus"></i> +91 9090909090</a
+                        >
+                      </li>
+
+                      <li class="icon-start font-sm">
+                        <a href="mailto:sotiwo7688@cnurbano.com">
+                          <i class="fal fa-envelope"></i>
+                          sotiwo7688@cnurbano.com</a
+                        >
+                      </li>
+                    </ul>
+                    <a href="vendor-profile.html" class="btn-text"
+                      >View Profile</a
+                    >
+                  </div>
+                </div>
+                <!-- agent-default -->
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="agent-box radius-md mb-30">
+                  <div class="agent-img">
+                    <figure>
+                      <a href="#" class="lazy-container ratio ratio-1-2">
+                        <img
+                          class="lazyload"
+                          src="assets/admin/img/vendor-photo/66693c33f1d1f.png"
+                          data-src="assets/admin/img/vendor-photo/66693c33f1d1f.png"
+                        />
+                      </a>
+                    </figure>
+                    <div
+                      class="agent-ratings d-flex align-items-center justify-content-between"
+                    >
+                      <div class="ratings"></div>
+                      <span class="label">Real Estate</span>
+                    </div>
+                  </div>
+                  <div class="agent-details text-center">
+                    <span class="color-primary font-sm">2 Properties</span> |
+                    <span class="color-primary font-sm">1 Agents</span> |
+                    <span class="color-primary font-sm">0 Projects</span>
+
+                    <h4 class="agent-title">
+                      <a href="vendor-profile.html">Mackenzie Buntine</a>
+                    </h4>
+                    <ul class="agent-info list-unstyled p-0">
+                      <li class="icon-start">
+                        <a href="tel:24541202">
+                          <i class="fal fa-phone-plus"></i> +91 9090909090</a
+                        >
+                      </li>
+
+                      <li class="icon-start font-sm">
+                        <a href="mailto:mackenziebuntine@gmail.com">
+                          <i class="fal fa-envelope"></i>
+                          mackenziebuntine@gmail.com</a
+                        >
+                      </li>
+                    </ul>
+                    <a href="vendor-profile.html" class="btn-text"
+                      >View Profile</a
+                    >
+                  </div>
+                </div>
+                <!-- agent-default -->
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="agent-box radius-md mb-30">
+                  <div class="agent-img">
+                    <figure>
+                      <a href="#" class="lazy-container ratio ratio-1-2">
+                        <img
+                          class="lazyload"
+                          src="assets/admin/img/vendor-photo/66693a4661a9f.png"
+                          data-src="assets/admin/img/vendor-photo/66693a4661a9f.png"
+                        />
+                      </a>
+                    </figure>
+                    <div
+                      class="agent-ratings d-flex align-items-center justify-content-between"
+                    >
+                      <div class="ratings"></div>
+                      <span class="label">Real Estate</span>
+                    </div>
+                  </div>
+                  <div class="agent-details text-center">
+                    <span class="color-primary font-sm">1 Properties</span> |
+                    <span class="color-primary font-sm">1 Agents</span> |
+                    <span class="color-primary font-sm">2 Projects</span>
+
+                    <h4 class="agent-title">
+                      <a href="vendor-profile.html">Justin Leichhardt</a>
+                    </h4>
+                    <ul class="agent-info list-unstyled p-0">
+                      <li class="icon-start">
+                        <a href="tel:2654512">
+                          <i class="fal fa-phone-plus"></i> +91 9090909090</a
+                        >
+                      </li>
+
+                      <li class="icon-start font-sm">
+                        <a href="mailto:justinleichhardt@example.com">
+                          <i class="fal fa-envelope"></i>
+                          justinleichhardt@example.com</a
+                        >
+                      </li>
+                    </ul>
+                    <a href="vendor-profile.html" class="btn-text"
+                      >View Profile</a
+                    >
+                  </div>
+                </div>
+                <!-- agent-default -->
+              </div>
+            </div>
+            <div class="pagination mb-30 justify-content-center"></div>
+            <div class="text-center mt-4">
+              <a href="" target="_blank" onclick="adView(7)" class="ad-banner">
+                <img
+                  data-src="assets/img/advertisements/65bf7088a2c9f.png"
+                  alt="advertisement"
+                  style="width: 728px; height: 90px"
+                  class="lazyload blur-up"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <aside class="sidebar-widget-area" data-aos="fade-up">
+              <div class="widget widget-form radius-md mb-30">
+                <form action="vendors" method="GET">
+                  <h3 class="title mb-20">Find Vendor</h3>
+                  <div class="form-group mb-20">
+                    <input
+                      type="text"
+                      name="name"
+                      value=""
+                      class="form-control"
+                      placeholder="Vendor name/username"
+                    />
+                  </div>
+                  <div class="form-group mb-20">
+                    <select
+                      class="nice-select"
+                      aria-label="#"
+                      id="type"
+                      name="type"
+                    >
+                      <option value="" selected>Select Property Type</option>
+
+                      <option value="residential">Residential</option>
+
+                      <option value="commercial">Commercial</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-20">
+                    <input
+                      type="text"
+                      name="location"
+                      class="form-control"
+                      value=""
+                      placeholder="Enter location"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-md btn-primary w-100">
+                    Search Now
+                  </button>
+                </form>
+              </div>
+              <div class="text-center mb-40">
+                <a
+                  href=""
+                  target="_blank"
+                  onclick="adView(8)"
+                  class="ad-banner"
+                >
+                  <img
+                    data-src="assets/img/advertisements/65bf704fb05c6.png"
+                    alt="advertisement"
+                    style="width: 300px; height: 600px"
+                    class="lazyload blur-up"
+                  />
+                </a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      data-popup_delay="2000"
+      data-popup_id="24"
+      id="modal-popup-24"
+      class="popup-wrapper"
+    >
+      <div class="popup-four">
+        <div class="popup_main-content">
+          <div class="left-bg bg-cover">
+            <img
+              class="lazyload bg-img blur-up"
+              src="assets/img/popups/65bb6bd20536d.png"
+            />
+          </div>
+          <div class="right-content">
+            <h1>Get 10% off your first package purchase</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt
+            </p>
+
+            <div class="subscribe-form">
+              <form
+                class="subscriptionForm"
+                action="store-subscriber"
+                method="POST"
+              >
+                <input type="hidden" name="_token" value="" />
+                <div class="form_group">
+                  <input
+                    type="email"
+                    class="form_control"
+                    placeholder="Enter Your Email Address"
+                    name="email_id"
+                  />
+                </div>
+
+                <div class="form_group">
+                  <button
+                    type="submit"
+                    class="popup-main-btn"
+                    style="background-color: #3d8774"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-area start -->
+
+    <footer class="footer-area border">
+      <!-- Background Image -->
+      <img class="lazyload blur-up bg-img" src="assets/img/6572f1d3ead31.png" />
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gx-xl-5 justify-content-xl-between">
+            <div class="col-lg-5">
+              <div class="footer-widget">
+                <div class="navbar-brand">
+                  <a href="">
+                    <img src="assets/img/logo.png" />
+                  </a>
+                </div>
+                <p class="text">
+                  We are a Leading Real Estate Service Company, serving
+                  exclusively for “Residential Commercial & Industrial
+                  Properties Segment” in Maharashtra, a leading state of India.
+                </p>
+
+                <div class="social-link">
+                  <a href="" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xl-2 col-sm-6">
+              <div class="footer-widget">
+                <h4>Useful Links</h4>
+                <ul class="footer-links">
+                  <li>
+                    <a href="projects.html">Projects</a>
+                  </li>
+                  <li>
+                    <a href="about-us.html">About Us</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact</a>
+                  </li>
+                  <li>
+                    <a href="vendors.html">Vendors</a>
+                  </li>
+                  <li>
+                    <a href="faq.html">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="blog.html">Blog</a>
+                  </li>
+
+                  <li>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="terms-&-condition.html">Terms Of use</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-sm-6">
+              <div class="footer-widget">
+                <h4>Contact Us</h4>
+                <ul class="footer-links">
+                  <li>
+                    <i class="fal fa-map-marker-alt"></i> &nbsp;
+                    <a
+                      href="https://maps.app.goo.gl/7YQ849X9ZeF5d6WD9"
+                      target="_blank"
+                    >
+                      <span
+                        >J 207, Mega center, Magarpatta , Hadapsar , Pune -
+                        411028</span
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <i class="fal fa-phone-plus"></i>
+                    <a href="tel:+918530417878">(+91) 8530417878</a>
+                  </li>
+                  <li>
+                    <i class="fal fa-envelope"></i>
+                    <a href="mailto:swadeshpropertiespune@gmail.com"
+                      >swadeshpropertiespune@gmail.com</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fal fa-browser"></i>
+                    <a href="index.html"> https://swadeshpropertiesindia.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right-area border-top">
+        <div class="container">
+          <div class="copy-right-content">
+            <span> <p>Copyright ©2024. All Rights Reserved.</p> </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer-area end-->
+
+    <!-- Go to Top -->
+    <div class="go-top"><i class="fal fa-angle-double-up"></i></div>
+
+    <!-- WhatsApp Chat Button -->
+    <div id="WAButton"></div>
+
+    <script>
+      "use strict";
+      const baseURL = "";
+      const all_model = "All";
+      const read_more = "Read More";
+      const read_less = "Read Less";
+      const show_more = "Show More+";
+      const show_less = "Show Less-";
+      const langDir = "0";
+      var vapid_public_key = "";
+    </script>
+    <!-- Jquery JS -->
+    <script src="assets/front/js/vendors/jquery.min.js"></script>
+    <script src="assets/front/js/vendors/bootstrap.min.js"></script>
+    <script src="assets/front/js/vendors/datatables.min.js"></script>
+    <script src="assets/front/js/vendors/jquery.nice-select.min.js"></script>
+    <script src="assets/front/js/vendors/select2.min.js"></script>
+    <script src="assets/front/js/vendors/jquery.magnific-popup.min.js"></script>
+    <script src="assets/front/js/vendors/jquery.counterup.min.js"></script>
+    <script src="assets/front/js/vendors/jquery.waypoints.js"></script>
+    <script src="assets/front/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/front/js/vendors/lazysizes.min.js"></script>
+    <script src="assets/front/js/vendors/nouislider.min.js"></script>
+    <script src="assets/front/js/vendors/aos.min.js"></script>
+    <script src="assets/js/toastr.min.js"></script>
+    <script src="assets/front/js/vendors/masonry.pkgd.js"></script>
+    <script src="assets/front/js/vendors/imagesloaded.pkgd.js"></script>
+    <script src="assets/js/floating-whatsapp.js"></script>
+    <script src="assets/front/js/script.js"></script>
+
+    <script src="assets/js/jquery-syotimer.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!--Start of Tawk.to Script-->
+    <!--End of Tawk.to Script-->
+
+    <script></script>
+  </body>
+</html>

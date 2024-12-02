@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="" dir="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="Home" />
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/img/65127f2a23da3.png" />
+    <!-- Icomoon Icon CSS -->
+    <link rel="stylesheet" href="assets/front/fonts/icomoon/style.css" />
+    <link
+      rel="stylesheet"
+      href="assets/front/fonts/fontawesome/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/front/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/front/css/vendors/datatables.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/front/css/vendors/magnific-popup.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/front/css/vendors/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/front/css/vendors/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/front/css/vendors/nice-select.css" />
+    <link rel="stylesheet" href="assets/front/css/vendors/select2.min.css" />
+    <link rel="stylesheet" href="assets/front/css/vendors/aos.min.css" />
+    <link rel="stylesheet" href="assets/css/toastr.min.css" />
+    <link rel="stylesheet" href="assets/front/css/vendors/leaflet.css" />
+    <link rel="stylesheet" href="assets/front/css/vendors/MarkerCluster.css" />
+    <link rel="stylesheet" href="assets/css/floating-whatsapp.css" />
+    <link rel="stylesheet" href="assets/front/css/style.css" />
+    <link rel="stylesheet" href="assets/front/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/summernote-content.css" />
+
+    <style>
+      :root {
+        --color-primary: red;
+        --color-primary-rgb: 245, 127, 75;
+        --color-secondary: #75a0ff;
+        --color-secondary-rgb: 37, 80, 86;
+      }
+    </style>
+  </head>
+
+  <body dir="">
+    <!-- Preloader start -->
+    <div id="preLoader">
+      <div class="loader">
+        <svg viewBox="0 0 80 80">
+          <rect x="8" y="8" width="64" height="64"></rect>
+        </svg>
+        <div class="icon"><img src="assets/front/demo-img/p1.png" /></div>
+      </div>
+    </div>
+    <!-- Preloader end -->
+    <div class="request-loader">
+      <img src="assets/img/loaders.gif" />
+    </div>
+
+    <!-- Header Start -->
+    <header class="header-area header-1" data-aos="slide-down">
+      <div class="mobile-menu">
+        <div class="container">
+          <div class="mobile-menu-wrapper"></div>
+        </div>
+      </div>
+
+      <div class="main-responsive-nav">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html">
+              <img src="assets/img/logo.png" />
+            </a>
+          </div>
+          <button class="menu-toggler" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="main-navbar">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg">
+            <!-- Logo -->
+            <a href="index.html" class="navbar-brand">
+              <img src="assets/img/logo.png" />
+            </a>
+            <!-- Navigation items -->
+            <div class="collapse navbar-collapse">
+              <ul id="mainMenu" class="navbar-nav mobile-item mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link toggle" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="properties.html"
+                    >Property Services</a
+                  >
+                </li>
+
+                <li class="nav-item active">
+                  <a class="nav-link toggle" href="#"
+                    >Home Loan<i class="fal fa-plus"></i
+                  ></a>
+                  <ul class="menu-dropdown">
+                    <li class="mb-1 mx-3">Apply Now</li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="home-loan-emi-calculator.html"
+                        >Home Loan EMI Calculator</a
+                      >
+                    </li>
+                    <hr />
+                    <li class="mb-1 mx-3">Explore</li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="loan-eligibility.html"
+                        >Loan Eligibility</a
+                      >
+                    </li>
+                    <hr />
+                    <li class="mb-1 mx-3">Interest Rates</li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="sbi-home-loan-interest-rates.html"
+                        >SBI Home Loan Interest Rates</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="hdfc-home-loan-interest-rates.html"
+                        >HDFC Home Loan Interest Rates</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link toggle" href="#"
+                    >Important Links<i class="fal fa-plus"></i
+                  ></a>
+                  <ul class="menu-dropdown">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://bhulekh.mahabhumi.gov.in/"
+                        target="_blank"
+                        >7/12 Utara</a
+                      >
+                    </li>
+                    <hr />
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://efilingigr.maharashtra.gov.in/ereg/MainForm.aspx"
+                        target="_blank"
+                        >Leave and License -Online</a
+                      >
+                    </li>
+                    <hr />
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://igrmaharashtra.gov.in/"
+                        target="_blank"
+                        >IGR -Registration site</a
+                      >
+                    </li>
+                    <hr />
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://digitalsatbara.mahabhumi.gov.in/aaplichawdi/"
+                        target="_blank"
+                        >Aapali Chavadi / Ferfar</a
+                      >
+                    </li>
+                    <hr />
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://mahabhunakasha.mahabhumi.gov.in/bhunaksha/27/index.jsp"
+                        target="_blank"
+                        >Gavnakasha</a
+                      >
+                    </li>
+                    <hr />
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://emojni.mahabhumi.gov.in/emojni/mojani/pgLogin.aspx"
+                        target="_blank "
+                        >emojani/Check Mojni Application Status( चेक मोजणी
+                        स्टेटस )</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="more-option mobile-item">
+              <div class="item">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-outline btn-sm dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Customer
+                  </button>
+                  <ul class="dropdown-menu radius-0">
+                    <li>
+                      <a class="dropdown-item" href="user-login.html">Login</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="user-signup.html"
+                        >Signup</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-primary btn-sm dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Vendor
+                  </button>
+                  <ul class="dropdown-menu radius-0">
+                    <li>
+                      <a class="dropdown-item" href="vendor-login.html"
+                        >Login</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="vendor-signup.html"
+                        >Signup</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <div class="pt-60 pb-70 border-top header-next">
+      <div class="container">
+        <div class="row g-4">
+          <div
+            class="col-lg-12 mb-5"
+            style="
+              border: 1px dotted red;
+              padding: 20px;
+              border-radius: 10px;
+              background: #f2f2f299;
+            "
+          >
+            <h4>HDFC Home Loan Interest Rates</h4>
+            <h6 class="mb-4">
+              SBI Home Loan Interest Rates – Updated on 16th Aug
+            </h6>
+            <p style="text-align: justify">
+              State Bank of India (SBI), India’s largest bank, provides
+              lucrative interest rates for home loans. They start as low as
+              8.05% p.a. The loan tenure ranges to a maximum 30 years. If you
+              are looking to get a home loan, here’s all you need to know about
+              interest rates charged by SBI on home loans.
+            </p>
+            <p style="text-align: justify">
+              State Bank of India or SBI, country’s largest lender, has raised
+              marginal cost of funds based lending rate or MCLR on loans by up
+              to 20 basis points (bps) with effect from today. As a result, the
+              equated monthly installments (EMIs) will get expensive for those
+              who avail loans benchmarked against the MCLR.
+            </p>
+          </div>
+          <div class="col-lg-8">
+            <div
+              style="
+                border: 1px dotted red;
+                padding: 20px;
+                border-radius: 10px;
+                background: #f2f2f299;
+              "
+            >
+              <h4>SBI Home Loan Highlights 2022</h4>
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <td style="font-size: 12px; text-wrap: nowrap">
+                        Interest Rate
+                      </td>
+                      <td style="font-size: 12px; text-wrap: nowrap">
+                        8.05% – 9.05% p.a.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: 12px; text-wrap: nowrap">
+                        Loan Amount
+                      </td>
+                      <td style="font-size: 12px; text-wrap: nowrap">
+                        Up to 90% of property value
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: 12px; text-wrap: nowrap">
+                        Loan Tenure
+                      </td>
+                      <td style="font-size: 12px; text-wrap: nowrap">
+                        Up to 30 years
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: 12px; text-wrap: nowrap">
+                        Processing Charges
+                      </td>
+                      <td style="font-size: 12px; text-wrap: nowrap">
+                        0.35% of loan amount (Rs 2,000-Rs 10,000)(50% waiver in
+                        basic processing fee)
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div
+              style="
+                border: 1px dotted red;
+                padding: 20px;
+                border-radius: 10px;
+                background: #f2f2f299;
+              "
+            >
+              <div class="">
+                <h4 class="text-center mb-4">Bank Wise Interest Rate</h4>
+                <ul>
+                  <li class="mb-2">
+                    <a href="sbi-home-loan-interest-rates.html">
+                      <i class="fal fa-arrow-right"></i> &nbsp; SBI Home Loan
+                      Interest Rates
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="hdfc-home-loan-interest-rates.html">
+                      <i class="fal fa-arrow-right"></i> &nbsp; HDFC Home Loan
+                      Interest Rates
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Go to Top -->
+    <div class="go-top"><i class="fal fa-angle-double-up"></i></div>
+
+    <!-- WhatsApp Chat Button -->
+    <div id="WAButton"></div>
+
+    <!-- Footer-area start -->
+    <footer class="footer-area border">
+      <!-- Background Image -->
+      <img class="lazyload blur-up bg-img" src="assets/img/6572f1d3ead31.png" />
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gx-xl-5 justify-content-xl-between">
+            <div class="col-lg-5">
+              <div class="footer-widget">
+                <div class="navbar-brand">
+                  <a href="">
+                    <img src="assets/img/logo.png" />
+                  </a>
+                </div>
+                <p class="text">
+                  We are a Leading Real Estate Service Company, serving
+                  exclusively for “Residential Commercial & Industrial
+                  Properties Segment” in Maharashtra, a leading state of India.
+                </p>
+
+                <div class="social-link">
+                  <a href="" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xl-2 col-sm-6">
+              <div class="footer-widget">
+                <h4>Useful Links</h4>
+                <ul class="footer-links">
+                  <li>
+                    <a href="projects.html">Projects</a>
+                  </li>
+                  <li>
+                    <a href="about-us.html">About Us</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact</a>
+                  </li>
+                  <li>
+                    <a href="vendors.html">Vendors</a>
+                  </li>
+                  <li>
+                    <a href="faq.html">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="blog.html">Blog</a>
+                  </li>
+                  <li>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="terms-&-condition.html">Terms Of use</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-sm-6">
+              <div class="footer-widget">
+                <h4>Contact Us</h4>
+                <ul class="footer-links">
+                  <li>
+                    <i class="fal fa-map-marker-alt"></i> &nbsp;
+                    <a
+                      href="https://maps.app.goo.gl/7YQ849X9ZeF5d6WD9"
+                      target="_blank"
+                    >
+                      <span
+                        >J 207, Mega center, Magarpatta , Hadapsar , Pune -
+                        411028</span
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <i class="fal fa-phone-plus"></i>
+                    <a href="tel:+918530417878">(+91) 8530417878</a>
+                  </li>
+                  <li>
+                    <i class="fal fa-envelope"></i>
+                    <a href="mailto:swadeshpropertiespune@gmail.com"
+                      >swadeshpropertiespune@gmail.com</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fal fa-browser"></i>
+                    <a href="index.html"> https://swadeshpropertiesindia.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right-area border-top">
+        <div class="container">
+          <div class="copy-right-content">
+            <span> <p>Copyright ©2024. All Rights Reserved.</p> </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer-area end-->
+
+    <script>
+      "use strict";
+      const baseURL = "";
+      const all_model = "All";
+      const read_more = "Read More";
+      const read_less = "Read Less";
+      const show_more = "Show More+";
+      const show_less = "Show Less-";
+      const langDir = "0";
+      var vapid_public_key = "";
+    </script>
+    <!-- Jquery JS -->
+    <script src="assets/front/js/vendors/jquery.min.js"></script>
+    <script src="assets/front/js/vendors/bootstrap.min.js"></script>
+    <script src="assets/front/js/vendors/datatables.min.js"></script>
+    <script src="assets/front/js/vendors/jquery.nice-select.min.js"></script>
+    <script src="assets/front/js/vendors/select2.min.js"></script>
+    <script src="assets/front/js/vendors/jquery.magnific-popup.min.js"></script>
+    <script src="assets/front/js/vendors/jquery.counterup.min.js"></script>
+    <script src="assets/front/js/vendors/jquery.waypoints.js"></script>
+    <script src="assets/front/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/front/js/vendors/lazysizes.min.js"></script>
+    <script src="assets/front/js/vendors/nouislider.min.js"></script>
+    <script src="assets/front/js/vendors/aos.min.js"></script>
+    <script src="assets/js/toastr.min.js"></script>
+    <script src="assets/front/js/vendors/masonry.pkgd.js"></script>
+    <script src="assets/front/js/vendors/imagesloaded.pkgd.js"></script>
+    <script src="assets/js/floating-whatsapp.js"></script>
+    <script src="assets/front/js/script.js"></script>
+
+    <script src="assets/js/jquery-syotimer.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!--Start of Tawk.to Script-->
+    <!--End of Tawk.to Script-->
+
+    <script></script>
+  </body>
+</html>

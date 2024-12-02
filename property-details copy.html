@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="" dir="">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="Home" />
+    <title>Home</title>
+     <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/img/favicon.png"
+    />
+    <link rel="apple-touch-icon" href="assets/img/65127f2a23da3.png" />
+    <!-- Icomoon Icon CSS -->
+    <link rel="stylesheet" href="assets/front/fonts/icomoon/style.css" />
+    <link
+      rel="stylesheet"
+      href="assets/front/fonts/fontawesome/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/front/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/front/css/vendors/datatables.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/front/css/vendors/magnific-popup.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/front/css/vendors/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/front/css/vendors/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/front/css/vendors/nice-select.css" />
+    <link rel="stylesheet" href="assets/front/css/vendors/select2.min.css" />
+    <link rel="stylesheet" href="assets/front/css/vendors/aos.min.css" />
+    <link rel="stylesheet" href="assets/css/toastr.min.css" />
+    <link rel="stylesheet" href="assets/front/css/vendors/leaflet.css" />
+    <link rel="stylesheet" href="assets/front/css/vendors/MarkerCluster.css" />
+    <link rel="stylesheet" href="assets/css/floating-whatsapp.css" />
+    <link rel="stylesheet" href="assets/front/css/style.css" />
+    <link rel="stylesheet" href="assets/front/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/summernote-content.css" />
+
+    <style>
+      :root {
+        --color-primary: red;
+        --color-primary-rgb: 245, 127, 75;
+        --color-secondary: #75a0ff;
+        --color-secondary-rgb: 37, 80, 86;
+      }
+    </style>
+  </head>
+
+
+<body dir="">
+    <!-- Preloader start -->
+    <div id="preLoader">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+            <div class="icon"><img src="assets/front/demo-img/p1.png"></div>
+        </div>
+    </div>
+    <!-- Preloader end -->
+    <div class="request-loader">
+        <img src="assets/img/loaders.gif">
+    </div>
+
+
+    <!-- Header Start -->
+    <header class="header-area header-1" data-aos="slide-down">
+        <div class="mobile-menu">
+          <div class="container">
+            <div class="mobile-menu-wrapper"></div>
+          </div>
+        </div>
+  
+        <div class="main-responsive-nav">
+          <div class="container">
+            <div class="logo">
+              <a href="index.html">
+                <img src="assets/img/66669210543fd.png" />
+              </a>
+            </div>
+            <button class="menu-toggler" type="button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+  
+        <div class="main-navbar">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg">
+              <!-- Logo -->
+              <a href="index.html" class="navbar-brand">
+                 <img src="assets/img/logo.png" />
+              </a>
+              <!-- Navigation items -->
+              <div class="collapse navbar-collapse">
+                <ul id="mainMenu" class="navbar-nav mobile-item mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link toggle" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="properties.html">Properties</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link toggle" href="#"
+                      >Pages<i class="fal fa-plus"></i
+                    ></a>
+                    <ul class="menu-dropdown">
+                      <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="vendors.html">Vendors</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="terms-&-condition.html"
+                          >Terms &amp; Condition</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="privacy-policy.html"
+                          >Privacy Policy</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="more-option mobile-item">
+                <div class="item">
+                  <div class="language">
+                    <form action="change-language" method="GET">
+                      <select
+                        class="nice-select"
+                        name="lang_code"
+                        onchange="this.form.submit()"
+                      >
+                        <option value="en" selected>English</option>
+                        <option value="ar">عربي</option>
+                      </select>
+                    </form>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-outline btn-sm dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Customer
+                    </button>
+                    <ul class="dropdown-menu radius-0">
+                      <li>
+                       <a class="dropdown-item" href="user-login.html">Login</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="user/signup.html"
+                          >Signup</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-primary btn-sm dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Vendor
+                    </button>
+                    <ul class="dropdown-menu radius-0">
+                      <li>
+                        <a class="dropdown-item" href="vendor/login.html"
+                          >Login</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="vendor/signup.html"
+                          >Signup</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+    <!-- Header End -->
+
+
+
+    <div class="product-single pt-100 pb-70 border-top header-next">
+        <div class="container">
+            <div class="row gx-xl-5">
+                <div class="col-lg-9 col-xl-8">
+                    <div class="product-single-gallery mb-40">
+                        <!-- Slider navigation buttons -->
+                        <div class="slider-navigation">
+                            <button type="button" title="Slide prev" class="slider-btn slider-btn-prev">
+                                <i class="fal fa-angle-left"></i>
+                            </button>
+                            <button type="button" title="Slide next" class="slider-btn slider-btn-next">
+                                <i class="fal fa-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="swiper product-single-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure class="radius-lg lazy-container ratio ratio-16-11">
+                                        <a href="assets/img/property/slider-images/6666e2484bd70.png" class="lightbox-single">
+                                                <img class="lazyload" src="assets/images/placeholder.png"
+                                                    data-src="assets/img/property/slider-images/6666e2484bd70.png">
+                                            </a>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="radius-lg lazy-container ratio ratio-16-11">
+                                        <a href="assets/img/property/slider-images/6666e251a780a.png" class="lightbox-single">
+                                                <img class="lazyload" src="assets/images/placeholder.png"
+                                                    data-src="assets/img/property/slider-images/6666e251a780a.png">
+                                            </a>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="radius-lg lazy-container ratio ratio-16-11">
+                                        <a href="assets/img/property/slider-images/6666e251ccf65.png" class="lightbox-single">
+                                                <img class="lazyload" src="assets/images/placeholder.png"
+                                                    data-src="assets/img/property/slider-images/6666e251ccf65.png">
+                                            </a>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="radius-lg lazy-container ratio ratio-16-11">
+                                        <a href="assets/img/property/slider-images/6666e251d0d34.png" class="lightbox-single">
+                                                <img class="lazyload" src="assets/images/placeholder.png"
+                                                    data-src="assets/img/property/slider-images/6666e251d0d34.png">
+                                            </a>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="swiper slider-thumbnails">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="thumbnail-img lazy-container radius-md ratio ratio-16-11">
+                                        <img class="lazyload" src="assets/images/placeholder.png" data-src="assets/img/property/slider-images/6666e2484bd70.png">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="thumbnail-img lazy-container radius-md ratio ratio-16-11">
+                                        <img class="lazyload" src="assets/images/placeholder.png" data-src="assets/img/property/slider-images/6666e251a780a.png">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="thumbnail-img lazy-container radius-md ratio ratio-16-11">
+                                        <img class="lazyload" src="assets/images/placeholder.png" data-src="assets/img/property/slider-images/6666e251ccf65.png">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="thumbnail-img lazy-container radius-md ratio ratio-16-11">
+                                        <img class="lazyload" src="assets/images/placeholder.png" data-src="assets/img/property/slider-images/6666e251d0d34.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-single-details">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="d-flex align-items-center justify-content-between mb-10">
+                                    <span class="product-category text-sm"> <a
+                                            href="properties?category=building">
+                                            Building</a></span>
+                                </div>
+                                <h3 class="product-title">
+                                    <a href="#">Prime Commercial Building for Rent</a>
+                                </h3>
+                                <div class="product-location icon-start">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                    <span>
+                                        SE, Drumheller, AB T0J 0Y6, Canada
+                                    </span>
+                                    <span>
+                                        Alberta
+                                        
+                                        , Canada
+                                    </span>
+                                </div>
+                                <ul class="product-info p-0 list-unstyled d-flex align-items-center mt-10 mb-30">
+                                    <li class="icon-start" data-tooltip="tooltip" data-bs-placement="top" title="Area">
+                                        <i class="fal fa-vector-square"></i>
+                                        <span>1934 Sqft</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-price mb-10">
+                                    <span class="new-price">Price:
+                                        $23454</span>
+                                </div>
+                                <a href="agent/rendall">
+                                    <div class="user mb-20">
+                                        <div class="user-img">
+                                            <div class="lazy-container ratio ratio-1-1 rounded-pill">
+                                                <img class="lazyload" src="assets/img/blank-user.jpg" data-src=" assets/img/agents/6669428f99932.png
+                                            ">
+
+                                            </div>
+                                        </div>
+                                        <div class="user-info">
+                                            <h5 class="m-0">
+                                                Alex Rendall
+                                            </h5>
+
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <ul class="share-link list-unstyled mb-30">
+                                    <li>
+                                        <a class="btn blue" href="#" data-bs-toggle="modal" data-bs-target="#socialMediaModal">
+                                        <i class="far fa-share-alt"></i>
+                                    </a>
+                                        <span>Share</span>
+
+                                    </li>
+
+                                    <li>
+                                        <a href="addto/wishlist/80" class="btn red " data-tooltip="tooltip" data-bs-placement="top" title="Add to Wishlist">
+
+                                                                                    <i class="fal fa-heart"></i>
+                                                                            </a>
+                                        <span>Save</span>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mb-20"></div>
+                        <div class="product-desc mb-40">
+                            <h3 class="mb-20">Property Description</h3>
+                            <p class=" summernote-content">
+                                <p>Welcome to luxury living at its finest! This stunning penthouse offers the pinnacle of elegance and sophistication. With 4 bedrooms, 4.5 baths, and a sprawling 3115 of living space, this designer masterpiece is sure to
+                                    impress. Step outside onto the huge open terrace and be captivated by the breathtaking sunset views. Entertain friends and family in style with the summer kitchen and jacuzzi, creating memories that will last a lifetime.
+                                    The masterful layout and one-story living make this penthouse a truly unique find. Discover the renowned Brickell City Centre shops just steps away. Experience the best of luxury living in Brickell. Don't miss your
+                                    chance to own this remarkable penthouse!</p>
+                            </p>
+                        </div>
+                        <div class="text-center mb-3 mt-3">
+                            <a href="" target="_blank" onclick="adView(7)" class="ad-banner">
+          <img data-src="assets/img/advertisements/65bf7088a2c9f.png" alt="advertisement" style="width: 728px; height: 90px;" class="lazyload blur-up">
+        </a>
+                        </div>
+
+                        <div class="row" class="mb-20">
+                            <div class="col-12">
+                                <h3 class="mb-20"> Features</h3>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6 col-md-4 mb-20">
+                                <strong class="mb-1 text-dark d-block">Home Type</strong>
+                                <span>Single Family</span>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-4 mb-20">
+                                <strong class="mb-1 text-dark d-block">Flooring</strong>
+                                <span>Wood Tile</span>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-4 mb-20">
+                                <strong class="mb-1 text-dark d-block">Utilities</strong>
+                                <span>Central  Cooling System</span>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-4 mb-20">
+                                <strong class="mb-1 text-dark d-block">Parking</strong>
+                                <span>1 Car Garage</span>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-4 mb-20">
+                                <strong class="mb-1 text-dark d-block">Home Design</strong>
+                                <span>Concrete  Construction</span>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-4 mb-20">
+                                <strong class="mb-1 text-dark d-block">Kitchen</strong>
+                                <span>Microwave , Dishwasher</span>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-4 mb-20">
+                                <strong class="mb-1 text-dark d-block">Pet Policy</strong>
+                                <span>Breed Restrictions</span>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-4 mb-20">
+                                <strong class="mb-1 text-dark d-block">Additional Features</strong>
+                                <span>Balcony, Property Fronts a Bay or Harbor East</span>
+                            </div>
+                        </div>
+                        <div class="pb-20"></div>
+
+                        <div class="product-featured mb-40">
+                            <h3 class="mb-20">Amenities</h3>
+                            <ul class="featured-list list-unstyled p-0 m-0">
+                                <li class="d-inline-block icon-start">
+                                    <i class="fas fa-swimming-pool"></i>
+                                    <span>Swimming pool</span>
+                                </li>
+                                <li class="d-inline-block icon-start">
+                                    <i class="fas fa-dumbbell"></i>
+                                    <span>Gym</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="product-video mb-40">
+                            <h3 class="mb-20"> Video</h3>
+                            <div class="lazy-container radius-lg ratio ratio-16-11">
+                                <img class="lazyload" src="assets/front/images/placeholder.png" data-src="assets/img/property/video/666be88bc1ad0.png">
+                                <a href="https://www.youtube.com/watch?v=mrpiPK8_up0" class="video-btn youtube-popup p-absolute">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-planning mb-40">
+                            <h3 class="mb-20">Floor Planning</h3>
+                            <div class="lazy-container radius-lg ratio ratio-16-11 border">
+                                <img class="lazyload" src="assets/images/placeholder.png" data-src="assets/img/property/plannings/6666e2fe9f0f1.png">
+                            </div>
+                        </div>
+                        <div class="product-location mb-40">
+                            <h3 class="mb-20">Location</h3>
+                            <div class="lazy-container radius-lg ratio ratio-21-9 border">
+                                <iframe class="lazyload" src="https://maps.google.com/maps?q=51.45584603424815,-112.70527779864342&hl=en&z=14&amp;output=embed"></iframe>
+                            </div>
+                        </div>
+                        <div class="text-center mb-3 mt-3">
+                            <a href="" target="_blank" onclick="adView(7)" class="ad-banner">
+          <img data-src="assets/img/advertisements/65bf7088a2c9f.png" alt="advertisement" style="width: 728px; height: 90px;" class="lazyload blur-up">
+        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-4">
+                    <aside class="sidebar-widget-area mb-10" data-aos="fade-up">
+                        <div class="widget widget-form radius-md mb-30">
+                            <div class="user mb-20">
+                                <div class="user-img">
+                                    <div class="lazy-container ratio ratio-1-1 rounded-pill">
+                                        <a href="agent/rendall">
+                                            <img class="lazyload" src="assets/img/blank-user.jpg"
+                                                data-src="assets/img/agents/6669428f99932.png">
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div class="user-info">
+                                    <h4 class="mb-0">
+                                        <a href="agent/rendall"> Alex Rendall
+                                                                                    </a>
+                                    </h4>
+                                    <a class="d-block" href="tel: 26454285
+                                        ">
+                                                                            26454285
+                                                                    </a>
+                                    <a href="mailto: alex _rendall@gmail.com
+                                        ">
+                                                                            alex _rendall@gmail.com
+                                                                    </a>
+                                </div>
+                            </div>
+
+                            <form action="property-contact" method="POST">
+                                <input type="hidden" name="_token" value=""> <input type="hidden" name="vendor_id" value="0">
+                                <input type="hidden" name="agent_id" value="21">
+                                <input type="hidden" name="property_id" value="80">
+                                <div class="form-group mb-20">
+                                    <input type="text" class="form-control" name="name" placeholder="Name*" required value="">
+                                </div>
+                                <div class="form-group mb-20">
+                                    <input type="email" class="form-control" required name="email" placeholder="Email Address*" value="">
+                                </div>
+                                <div class="form-group mb-20">
+                                    <input type="number" class="form-control" name="phone" required value="" placeholder="Phone Number*">
+                                </div>
+                                <div class="form-group mb-20">
+                                    <textarea name="message" id="message" class="form-control" cols="30" rows="8" required="" data-error="Please enter your message" placeholder="Message..."></textarea>
+
+                                </div>
+                                <button type="submit" class="btn btn-md btn-primary w-100">Send message</button>
+                            </form>
+                        </div>
+
+                        <div class="widget widget-recent radius-md mb-30 ">
+                            <h3 class="title">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#products" aria-expanded="true" aria-controls="products">
+                                Related Property
+                            </button>
+                            </h3>
+                            <div id="products" class="collapse show">
+                                <div class="accordion-body p-0">
+                                    <div class="product-default product-inline mt-20">
+                                        <figure class="product-img">
+                                            <a href="property/commercial-building-in-high-traffic-area" class="lazy-container ratio ratio-1-1 radius-md">
+                                                <img class="lazyload" src="assets/images/placeholder.png"
+                                                    data-src="assets/img/property/featureds/6666c12e28972.jpg">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <h6 class="product-title"><a href="property/commercial-building-in-high-traffic-area">Commercial Building in High-Traffic Area</a>
+                                            </h6>
+                                            <span class="product-location icon-start"> <i
+                                                    class="fal fa-map-marker-alt"></i>
+                                                Orlando
+                                                , Florida
+                                                , USA</span>
+                                            <div class="product-price">
+
+                                                <span class="new-price">Price:
+                                                    $2874</span>
+                                            </div>
+                                            <ul class="product-info p-0 list-unstyled d-flex align-items-center">
+                                                <li class="icon-start" data-tooltip="tooltip" data-bs-placement="top" title="Area">
+                                                    <i class="fal fa-vector-square"></i>
+                                                    <span>1754</span>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- product-default -->
+                                    <div class="product-default product-inline mt-20">
+                                        <figure class="product-img">
+                                            <a href="property/elegant-duplex-with-private-yard" class="lazy-container ratio ratio-1-1 radius-md">
+                                                <img class="lazyload" src="assets/images/placeholder.png"
+                                                    data-src="assets/img/property/featureds/6666ba5b52e2e.jpg">
+                                            </a>
+                                        </figure>
+                                        <div class="product-details">
+                                            <h6 class="product-title"><a href="property/elegant-duplex-with-private-yard">Elegant Duplex with Private Yard</a>
+                                            </h6>
+                                            <span class="product-location icon-start"> <i
+                                                    class="fal fa-map-marker-alt"></i>
+                                                Los Angeles
+                                                , California
+                                                , USA</span>
+                                            <div class="product-price">
+
+                                                <span class="new-price">Price:
+                                                    $1258</span>
+                                            </div>
+                                            <ul class="product-info p-0 list-unstyled d-flex align-items-center">
+                                                <li class="icon-start" data-tooltip="tooltip" data-bs-placement="top" title="Area">
+                                                    <i class="fal fa-vector-square"></i>
+                                                    <span>2501</span>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- product-default -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mb-3 mt-3">
+                            <a href="" target="_blank" onclick="adView(11)" class="ad-banner">
+          <img data-src="assets/img/advertisements/65bf703742894.png" alt="advertisement" style="width: 300px; height: 600px;" class="lazyload blur-up">
+        </a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="socialMediaModal" tabindex="-1" role="dialog" aria-labelledby="socialMediaModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"> Share On </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="actions d-flex justify-content-around">
+                        <div class="action-btn">
+                            <a class="facebook btn" href="https://www.facebook.com/sharer/sharer.php?u=property/prime-commercial-building-for-rent&src=sdkpreparse"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <br>
+                            <span> Facebook </span>
+                        </div>
+                        <div class="action-btn">
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fcodecanyon8.kreativdev.com%2Festaty%2Fproperty%2Fprime-commercial-building-for-rent" class="linkedin btn"><i class="fab fa-linkedin-in"></i></a>
+                            <br>
+                            <span> Linkedin </span>
+                        </div>
+                        <div class="action-btn">
+                            <a class="twitter btn" href="https://twitter.com/intent/tweet?text=property/prime-commercial-building-for-rent"><i
+                                    class="fab fa-twitter"></i></a>
+                            <br>
+                            <span> Twitter </span>
+                        </div>
+                        <div class="action-btn">
+                            <a class="whatsapp btn" href="whatsapp://send?text=property/prime-commercial-building-for-rent"><i
+                                    class="fab fa-whatsapp"></i></a>
+                            <br>
+                            <span> Whatsapp </span>
+                        </div>
+                        <div class="action-btn">
+                            <a class="sms btn" href="sms:?body=property/prime-commercial-building-for-rent" class="sms"><i
+                                    class="fas fa-sms"></i></a>
+                            <br>
+                            <span> SMS </span>
+                        </div>
+                        <div class="action-btn">
+                            <a class="mail btn" href="mailto:?subject=Digital Card&body=Check out this digital card property/prime-commercial-building-for-rent."><i
+                                    class="fas fa-at"></i></a>
+                            <br>
+                            <span> Mail </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-popup_delay="2000" data-popup_id="24" id="modal-popup-24" class="popup-wrapper">
+        <div class="popup-four">
+            <div class="popup_main-content">
+                <div class="left-bg bg-cover">
+                    <img class="lazyload bg-img blur-up" src="assets/img/popups/65bb6bd20536d.png">
+                </div>
+                <div class="right-content">
+                    <h1>Get 10% off your first package purchase</h1>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+
+                    <div class="subscribe-form">
+                        <form class="subscriptionForm" action="store-subscriber" method="POST">
+                            <input type="hidden" name="_token" value="">
+                            <div class="form_group">
+                                <input type="email" class="form_control" placeholder="Enter Your Email Address" name="email_id">
+                            </div>
+
+                            <div class="form_group">
+                                <button type="submit" class="popup-main-btn" style="background-color: #3D8774;">
+                                            Subscribe
+                                        </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-area start -->
+
+    <footer class="footer-area border">
+        <!-- Background Image -->
+        <img class="lazyload blur-up bg-img" src="assets/img/6572f1d3ead31.png">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gx-xl-5 justify-content-xl-between">
+                    <div class="col-lg-5">
+                        <div class="footer-widget">
+                            <div class="navbar-brand">
+                                <a href="">
+                                       <img src="assets/img/logo.png" >
+                                    </a>
+                            </div>
+                            <p class="text"> Estaty is a dynamic and forward-thinking real estate company dedicated to providing exceptional real estate services across residential, commercial, and investment properties. </p>
+
+                            <div class="social-link">
+                                <a href="" target="_blank"><i
+                                                class="fab fa-instagram"></i></a>
+                                <a href="" target="_blank"><i
+                                                class="fab fa-dribbble"></i></a>
+                                <a href="" target="_blank"><i
+                                                class="fab fa-twitter"></i></a>
+                                <a href="" target="_blank"><i
+                                                class="fab fa-youtube"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-sm-6">
+                        <div class="footer-widget">
+                            <h4>Useful Links</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="about-us">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="contact">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="vendors">Vendors</a>
+                                </li>
+                                <li>
+                                    <a href="faq">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-4 col-sm-6">
+                        <div class="footer-widget">
+                            <h4>Contact Us</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <i class="fal fa-map-marker-alt"></i>
+                                    <span>13th Street 47 W ,New York, USA</span>
+                                </li>
+                                <li>
+                                    <i class="fal fa-phone-plus"></i>
+                                    <a href="tel:+88065879521">+88065879521</a>
+                                </li>
+                                <li>
+                                    <i class="fal fa-envelope"></i>
+                                    <a href="mailto:estaty@gmail.com">estaty@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right-area border-top">
+            <div class="container">
+                <div class="copy-right-content">
+                    <span> <p>Copyright ©2024. All Rights Reserved.</p> </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer-area end-->
+
+
+    <!-- Go to Top -->
+    <div class="go-top"><i class="fal fa-angle-double-up"></i></div>
+
+
+    <!-- WhatsApp Chat Button -->
+    <div id="WAButton"></div>
+
+    <script>
+        'use strict';
+        const baseURL = "";
+        const all_model = "All";
+        const read_more = "Read More";
+        const read_less = "Read Less";
+        const show_more = "Show More+";
+        const show_less = "Show Less-";
+        const langDir = "0";
+        var vapid_public_key = "";
+    </script>
+    <!-- Jquery JS -->
+    <script src="assets/front/js/vendors/jquery.min.js"></script>
+    <script src="assets/front/js/vendors/bootstrap.min.js"></script>
+    <script src="assets/front/js/vendors/datatables.min.js"></script>
+    <script src="assets/front/js/vendors/jquery.nice-select.min.js"></script>
+    <script src="assets/front/js/vendors/select2.min.js"></script>
+    <script src="assets/front/js/vendors/jquery.magnific-popup.min.js"></script>
+    <script src="assets/front/js/vendors/jquery.counterup.min.js"></script>
+    <script src="assets/front/js/vendors/jquery.waypoints.js"></script>
+    <script src="assets/front/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/front/js/vendors/lazysizes.min.js"></script>
+    <script src="assets/front/js/vendors/nouislider.min.js"></script>
+    <script src="assets/front/js/vendors/aos.min.js"></script>
+    <script src="assets/js/toastr.min.js"></script>
+    <script src="assets/front/js/vendors/masonry.pkgd.js"></script>
+    <script src="assets/front/js/vendors/imagesloaded.pkgd.js"></script>
+    <script src="assets/js/floating-whatsapp.js"></script>
+    <script src="assets/front/js/script.js"></script>
+
+    <script src="assets/js/jquery-syotimer.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+
+    <!--Start of Tawk.to Script-->
+    <!--End of Tawk.to Script-->
+
+
+    <script>
+    </script>
+</body>
+
+</html>
